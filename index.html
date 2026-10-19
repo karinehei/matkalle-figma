@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#124c43">
+  <meta name="description" content="Matkalle: itsenäinen UX/UI-portfoliokonsepti reitin ja lipun valintaan. Esimerkkidata, simuloitu maksaminen.">
+  <title>Matkalle · Reitistä oikeaan lippuun</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Siirry sisältöön</a>
+  <header class="site-header">
+    <a class="brand" href="#search" aria-label="Matkalle, etusivu"><span class="brand-mark" aria-hidden="true">↗</span>matkalle<span class="brand-dot">.</span></a>
+    <nav aria-label="Päänavigaatio">
+      <a href="#search" data-nav="search">Suunnittele matka</a>
+      <a href="#saved" data-nav="saved">Tallennetut</a>
+      <a href="#case" data-nav="case">Tapaustutkimus <span aria-hidden="true">↗</span></a>
+    </nav>
+    <span class="language">FI <span aria-hidden="true">·</span> Suomi</span>
+  </header>
+  <div class="concept-banner"><span class="tiny-dot" aria-hidden="true"></span>Itsenäinen portfoliokonsepti <span class="banner-divider">/</span> Esimerkkireitit ja hinnat · maksaminen on simuloitu</div>
+  <main id="main" tabindex="-1">
+    <div id="app"></div>
+  </main>
+  <div class="sr-only" id="announcement" role="status" aria-live="polite"></div>
+  <footer class="site-footer"><span>Matkalle <span aria-hidden="true">↗</span> Selkeästi perille.</span><span>Karine Heinonen · UX/UI-portfoliokonsepti · 2026</span><a href="#case">Tietoa demosta ja sen rajoista</a></footer>
+</body>
+</html>

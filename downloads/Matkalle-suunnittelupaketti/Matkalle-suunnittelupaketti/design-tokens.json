@@ -1,0 +1,37 @@
+{
+  "colors": {
+    "ink": "#173e37",
+    "muted": "#586c65",
+    "primary": "#124c43",
+    "mint": "#e9f2e9",
+    "lime": "#d5ed9b",
+    "paper": "#f7f8f3",
+    "border": "#d8e2d9",
+    "error": "#a72d2d"
+  },
+  "font": "Inter",
+  "typeScale": [
+    11,
+    12,
+    14,
+    16,
+    22,
+    32
+  ],
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48
+  ],
+  "radius": {
+    "control": 10,
+    "card": 12,
+    "panel": 18
+  },
+  "mobileWidth": 390,
+  "desktopWidth": 1280
+}

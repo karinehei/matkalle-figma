@@ -1,0 +1,307 @@
+[
+  {
+    "id": "search",
+    "name": "01 — Reittihaku",
+    "title": "Minne olet\nmatkalla?",
+    "subtitle": "Löydä sopiva reitti ja ymmärrä, millaisen lipun tarvitset.",
+    "step": 1,
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Suunnittele esimerkkimatka"
+      },
+      {
+        "type": "field",
+        "label": "Lähtöpaikka",
+        "value": "Pasilan asema"
+      },
+      {
+        "type": "field",
+        "label": "Määränpää",
+        "value": "Meilahti"
+      },
+      {
+        "type": "field",
+        "label": "Esimerkkipäivä ja lähtöaika",
+        "value": "22.10.2026 · 10.15"
+      },
+      {
+        "type": "check",
+        "text": "Suosi vähäisempää kävelyä"
+      },
+      {
+        "type": "button",
+        "text": "Näytä reittivaihtoehdot  →",
+        "target": "results"
+      },
+      {
+        "type": "note",
+        "text": "Kokeilu ei edellytä kirjautumista."
+      },
+      {
+        "type": "note",
+        "text": "Reitit ja aikataulut ovat esimerkkejä."
+      }
+    ]
+  },
+  {
+    "id": "results",
+    "name": "02 — Reittivaihtoehdot",
+    "title": "Sinulle sopiva\nreitti.",
+    "subtitle": "Vertaa matka-aikaa, kävelyä ja vaihtoja.",
+    "step": 1,
+    "back": "search",
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Pasilan asema → Meilahti\nEsimerkkipäivä 22.10.2026 · klo 10.15"
+      },
+      {
+        "type": "route",
+        "label": "Nopein esimerkki",
+        "time": "10.15 — 10.36",
+        "duration": "21 min",
+        "meta": "B1 · kävelyä 550 m · ei vaihtoja",
+        "selected": true,
+        "target": "details"
+      },
+      {
+        "type": "route",
+        "label": "Vähemmän kävelyä",
+        "time": "10.15 — 10.41",
+        "duration": "26 min",
+        "meta": "B2 · kävelyä 180 m · 1 vaihto"
+      },
+      {
+        "type": "route",
+        "label": "Suora yhteys",
+        "time": "10.15 — 10.45",
+        "duration": "30 min",
+        "meta": "R1 · kävelyä 800 m · ei vaihtoja"
+      },
+      {
+        "type": "note",
+        "text": "Ajat ja linjat ovat esimerkkejä, eivät voimassa olevia aikatauluja."
+      }
+    ]
+  },
+  {
+    "id": "details",
+    "name": "03 — Reitin tiedot",
+    "title": "Matkasi vaihe\nvaiheelta.",
+    "subtitle": "Tarkista reitti rauhassa. Seuraavaksi valitaan lippu.",
+    "step": 1,
+    "back": "results",
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Pasilan asema → Meilahti\n21 min · kävelyä 550 m · ei vaihtoja"
+      },
+      {
+        "type": "info",
+        "title": "10.15 · Pasilan asema",
+        "text": "Kävele esimerkkipysäkille, noin 250 metriä."
+      },
+      {
+        "type": "info",
+        "title": "B1 · Bussi kohti määränpäätä",
+        "text": "Seuraa linjan B1 esimerkkireittiä."
+      },
+      {
+        "type": "info",
+        "title": "10.36 · Meilahti",
+        "text": "Kävele loppumatka. Kävelyä yhteensä 550 metriä."
+      },
+      {
+        "type": "info",
+        "title": "Matka kulkee vyöhykkeillä A ja B.",
+        "text": "Näytämme seuraavaksi tähän esimerkkimatkaan sopivan lipun."
+      },
+      {
+        "type": "button",
+        "text": "Valitse matkaan sopiva lippu  →",
+        "target": "ticket"
+      },
+      {
+        "type": "note",
+        "text": "Reittitieto on saatavilla myös ilman karttaa."
+      }
+    ]
+  },
+  {
+    "id": "ticket",
+    "name": "04 — Lipun valinta",
+    "title": "Oikea lippu.\nSelkeä perustelu.",
+    "subtitle": "Näet, mitä lippu kattaa ja miksi se sopii matkaan.",
+    "step": 2,
+    "back": "details",
+    "blocks": [
+      {
+        "type": "info",
+        "title": "Tarvitset esimerkissä AB-lipun.",
+        "text": "Valittu reitti kulkee vyöhykkeillä A ja B.\nA  ●    B  ●    C  ○    D  ○"
+      },
+      {
+        "type": "ticket",
+        "title": "Kertalippu AB",
+        "price": "3,50 €",
+        "text": "80 minuuttia · yhdelle matkalle ja sen vaihdoille.",
+        "selected": true
+      },
+      {
+        "type": "ticket",
+        "title": "Vuorokausilippu AB",
+        "price": "9,00 €",
+        "text": "24 tuntia · useampaan matkaan vuorokauden aikana."
+      },
+      {
+        "type": "note",
+        "text": "Hinnat ja voimassaoloajat ovat esimerkkejä, eivät HSL:n hinnasto."
+      },
+      {
+        "type": "button",
+        "text": "Jatka yhteenvetoon · 3,50 €  →",
+        "target": "checkout"
+      }
+    ]
+  },
+  {
+    "id": "checkout",
+    "name": "05 — Ostoksen yhteenveto",
+    "title": "Kaikki valmiina\nvahvistukseen.",
+    "subtitle": "Tarkista valintasi. Maksaminen on simuloitu.",
+    "step": 2,
+    "back": "ticket",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Ostoksen yhteenveto"
+      },
+      {
+        "type": "summary",
+        "rows": [
+          [
+            "Matka",
+            "Pasila → Meilahti"
+          ],
+          [
+            "Lippu",
+            "Kertalippu AB"
+          ],
+          [
+            "Matkustaja",
+            "Aikuinen"
+          ],
+          [
+            "Voimassaolo",
+            "80 min · esimerkki"
+          ],
+          [
+            "Maksutapa",
+            "Simuloitu maksu"
+          ],
+          [
+            "Yhteensä",
+            "3,50 €"
+          ]
+        ]
+      },
+      {
+        "type": "info",
+        "title": "Tämä on demovaihe.",
+        "text": "Kortti- tai henkilötietoja ei kysytä eikä rahaa veloiteta. Demovahvistus ei kelpaa matkalipuksi."
+      },
+      {
+        "type": "button",
+        "text": "Vahvista demomaksu  →",
+        "target": "success"
+      }
+    ]
+  },
+  {
+    "id": "success",
+    "name": "06 — Demovahvistus",
+    "title": "Hyvä matka alkaa\nselkeydestä.",
+    "subtitle": "Olet kulkenut reitin valinnasta lipun demovahvistukseen.",
+    "step": 3,
+    "blocks": [
+      {
+        "type": "info",
+        "title": "✓ Demovahvistus valmis",
+        "text": "Esimerkkitilauksesi onnistui. Mitään ei veloitettu."
+      },
+      {
+        "type": "receipt",
+        "title": "Kertalippu AB · aikuinen",
+        "text": "Pasilan asema → Meilahti\nEsimerkkihinta 3,50 €\nEi kelpaa matkalipuksi."
+      },
+      {
+        "type": "button",
+        "text": "Suunnittele uusi matka  →",
+        "target": "search"
+      },
+      {
+        "type": "note",
+        "text": "Demovahvistus ei ole oikea matkalippu. Voit suunnitella uuden esimerkkimatkan."
+      }
+    ]
+  },
+  {
+    "id": "payment-error",
+    "name": "05b — Maksun virhetila",
+    "title": "Kaikki valmiina\nvahvistukseen.",
+    "subtitle": "Tarkista valintasi. Maksaminen on simuloitu.",
+    "step": 2,
+    "back": "ticket",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Ostoksen yhteenveto"
+      },
+      {
+        "type": "summary",
+        "rows": [
+          [
+            "Matka",
+            "Pasila → Meilahti"
+          ],
+          [
+            "Lippu",
+            "Kertalippu AB"
+          ],
+          [
+            "Matkustaja",
+            "Aikuinen"
+          ],
+          [
+            "Voimassaolo",
+            "80 min · esimerkki"
+          ],
+          [
+            "Maksutapa",
+            "Simuloitu maksu"
+          ],
+          [
+            "Yhteensä",
+            "3,50 €"
+          ]
+        ]
+      },
+      {
+        "type": "error",
+        "title": "Demomaksu ei onnistunut.",
+        "text": "Mitään ei veloitettu. Valintasi ovat tallessa. Voit yrittää uudelleen."
+      },
+      {
+        "type": "info",
+        "title": "Tämä on demovaihe.",
+        "text": "Kortti- tai henkilötietoja ei kysytä eikä rahaa veloiteta. Demovahvistus ei kelpaa matkalipuksi."
+      },
+      {
+        "type": "button",
+        "text": "Yritä demomaksua uudelleen  →",
+        "target": "success"
+      }
+    ]
+  }
+]
